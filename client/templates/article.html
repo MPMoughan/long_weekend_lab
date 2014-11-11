@@ -1,0 +1,23 @@
+<template name="article">
+
+  <div class="item well span4">
+    <a href="{{src}}" id="my-lightbox" data-type="image">
+      <img src="{{src}}" height="{{height}}" alt="alt-text" class="img-responsive">
+    </a>
+
+    <hr>
+    <h4 class="muted">{{name}}</h4>
+    <p>{{description}}</p>
+
+    {{#if currentUser}}
+    <p>
+      <a href="#" class="like">
+        <img width="22px" src="http://edublogs.org/files/2010/06/fblikehand.jpg" class="img-circle" alt="#" />
+      </a>
+      <span class="label label-info">{{numlikes}}</span> &nbsp;
+      <span class="badge badge-success">{{likethis}}</span>
+      <button class="delete">&times;</button>
+    </p>
+    {{/if}}
+   </div>
+</template>
