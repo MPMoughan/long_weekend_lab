@@ -60,15 +60,6 @@ function masonize(callback){
 };
 
 
-// lightbox plugin using data attributes
-// $(document).ready(function ($) {
-//     // delegate calls to data-toggle="lightbox"
-//     $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-//         event.preventDefault();
-//         return $(this).ekkoLightbox();
-//     });
-// });
-
 // lightbox plugin using javascript
 $(document).ready(function ($) {
     // delegate calls to data-toggle="lightbox"
